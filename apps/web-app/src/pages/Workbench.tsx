@@ -457,7 +457,7 @@ export function Workbench({ embedded = false, hostArtifacts }: { embedded?: bool
         <div>
           <div>
             <h1>Review what your agent selected.</h1>
-            <p>Review the exact skills, project profile and proposed changes saved by your agent. Import <code>aas-stack.json</code>, an immutable CLI plan, and optional selection evidence, or explore the recorded example below.</p>
+            <p>Review the exact skills, project profile and proposed changes saved by your agent. Import <code>aas-stack.json</code>, an immutable CLI plan, and optional selection evidence{embedded ? '. The plugin host can also provide the current stack.' : ', or explore the recorded example below.'}</p>
           </div>
           <dl>
             <div><dt>Imported artifacts</dt><dd>In-memory only</dd></div>

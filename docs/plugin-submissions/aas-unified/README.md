@@ -58,7 +58,15 @@ The maintainer authorized a free Upstash resource for preview on 2026-10-02.
 `aas-plugin-sessions` was provisioned in the AAS OSS team, region `fra1`,
 with `autoUpgrade=false`, `prodPack=false`, and eviction disabled. It is connected
 to Preview only. No production deployment or DNS update has been performed.
-The existing website project is not proof that the new endpoint is operational.
+A protected preview was tested on 2026-10-02 at
+`https://agentic-awesome-skills-er5v1tnsb-aas-oss-program.vercel.app/mcp`.
+An actual SDK client, authenticated through the existing Vercel CLI preview access,
+verified initialize, ten-tool discovery, catalog search/full content reading, stack
+composition/inspection, evidence export/inspection with preserved client identity,
+Workbench artifacts/resource reading and explicit session deletion. This candidate
+uses locally regenerated catalog artifacts (2,613 skills); source commits exclude
+those artifacts. Public unauthenticated access remains protected. This test does
+not prove installed native UI rendering or a public submission endpoint.
 
 ## Review materials and outstanding evidence
 
