@@ -79,7 +79,11 @@
     "app:test:coverage": "cd apps/web-app && npm run test:coverage -- --run",
     "app:dev": "npm run app:setup && cd apps/web-app && npm run dev",
     "app:build": "npm run app:setup && cd apps/web-app && npm run build",
-    "app:preview": "cd apps/web-app && npm run preview"
+    "app:preview": "cd apps/web-app && npm run preview",
+    "plugin:install": "npm --prefix apps/aas-plugin ci --ignore-scripts",
+    "plugin:test": "npm --prefix apps/aas-plugin test",
+    "plugin:build": "npm --prefix apps/web-app run build:plugin-ui",
+    "plugin:package": "node apps/aas-plugin/scripts/package.mjs"
   },
   "dependencies": {
     "ajv": "^8.20.0",

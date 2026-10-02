@@ -783,3 +783,22 @@ that `https://sickn33.github.io/agentic-awesome-skills/` and representative
 deep links still redirect to the canonical URL after the DNS change. If GitHub
 Pages stops redirecting them, publish a dedicated redirect artifact there
 before considering the migration complete.
+
+## Unified AAS plugin preparation (2026-10-02)
+
+Add three canonical workflow skills, a portable development-package exporter, and
+an HTTP adapter preserving existing Core results. Package Workbench as a standalone
+MCP Apps resource with browser-local imports and structured-result fallback. Prepare
+the existing Vercel project to serve `/mcp` using external Redis session snapshots;
+return responses only after durable commit. Keep publisher identity, worldwide/free
+decisions and outstanding live/demo/legal checks in the submission dossier. No public
+submission, production deployment or DNS update is performed. A free Upstash resource
+was authorized and provisioned for Preview with automatic paid upgrades disabled.
+
+Validation: root script suite, Core suite, schema/reference/security validation,
+web build, focused Workbench tests and real HTTP SDK tests. Function integration tests
+recreate the handler for each request and verify session continuity/isolation, storage
+failure and expiry. A real cloud Redis flow also verifies lease operations, session continuity and
+evidence export/inspection. Container execution and native UI rendering remain
+unverified. The full web suite passes with a 30-second test timeout; the default
+5-second timeout hits existing Git-history sitemap tests in this worktree. Generated catalog changes are excluded from this source PR.
