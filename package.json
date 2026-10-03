@@ -5,7 +5,7 @@
     "includedFromMajor": 15,
     "status": "agent-first-preview"
   },
-  "description": "AAS Core: complete local skill discovery, agent-owned selection, stack validation, and planning, backed by 2,632+ agentic skills.",
+  "description": "AAS Core: complete local skill discovery, agent-owned selection, stack validation, and planning, backed by 2,635+ agentic skills.",
   "license": "MIT",
   "scripts": {
     "validate": "node tools/scripts/run-python.js tools/scripts/validate_skills.py",
@@ -79,7 +79,11 @@
     "app:test:coverage": "cd apps/web-app && npm run test:coverage -- --run",
     "app:dev": "npm run app:setup && cd apps/web-app && npm run dev",
     "app:build": "npm run app:setup && cd apps/web-app && npm run build",
-    "app:preview": "cd apps/web-app && npm run preview"
+    "app:preview": "cd apps/web-app && npm run preview",
+    "plugin:install": "npm --prefix apps/aas-plugin ci --ignore-scripts",
+    "plugin:test": "npm --prefix apps/aas-plugin test",
+    "plugin:build": "npm --prefix apps/web-app run build:plugin-ui",
+    "plugin:package": "node apps/aas-plugin/scripts/package.mjs"
   },
   "dependencies": {
     "ajv": "^8.20.0",

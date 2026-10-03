@@ -783,3 +783,23 @@ that `https://sickn33.github.io/agentic-awesome-skills/` and representative
 deep links still redirect to the canonical URL after the DNS change. If GitHub
 Pages stops redirecting them, publish a dedicated redirect artifact there
 before considering the migration complete.
+
+## Unified AAS local plugin preparation (2026-10-02)
+
+Bundle three native workflow skills, the complete catalog and supporting files,
+read-only stdio Core, an offline artifact CLI, and single-file Workbench. Runtime
+requires only Node.js 22 or later on the user computer. No endpoint, cloud database,
+credentials, npm download, or hosted fallback is used. Local runtime identities
+bind bundled bytes; they do not assert verification of an npm release tarball.
+
+The experimental Upstash resource and all three previews containing the hosted
+MCP were removed. Production and DNS were never changed. Source configuration
+returns the existing website to its baseline build without a plugin Function.
+
+Validation includes a relocated package with networking denied: real SDK stdio
+catalog reading, composition/inspection, evidence, process isolation, Workbench
+resource, offline planning and audit. Focused Workbench browser tests pass with
+no fetch and no installer handoff. Root validation, references, documentation
+security, warning budget and full repository tests pass. Codex CLI installation passed with a temporary isolated configuration; native
+UI rendering remains unverified. Generated outputs stay excluded from
+this source PR and belong to protected canonical synchronization.
